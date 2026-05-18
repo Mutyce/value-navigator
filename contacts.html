@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты | Ценностный навигатор для семьи</title>
+  <meta name="description" content="Контакты АНО «Центр интеллектуального диалога»: e-mail idialogi@mail.ru, телефон, социальные сети и форма обратной связи.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="header"></div>
+
+  <main>
+
+    <!-- ─── Hero ──────────────────────────────────────────── -->
+    <section class="page-hero section">
+      <div class="container">
+        <h1 class="page-hero__title">Контакты</h1>
+        <p class="page-hero__subtitle">Свяжитесь с нами — мы ответим в течение двух рабочих дней</p>
+      </div>
+    </section>
+
+    <!-- ─── Contacts body ─────────────────────────────────── -->
+    <section class="contacts-body section" id="contacts">
+      <div class="container contacts-grid">
+
+        <!-- Левая колонка: информация -->
+        <div class="contacts-info">
+
+          <div class="cinfo-block">
+            <h2 class="cinfo-block__title">Связаться с нами</h2>
+            <div class="cinfo-row">
+              <span class="cinfo-row__label">E-mail</span>
+              <a href="mailto:idialogi@mail.ru" class="cinfo-row__val cinfo-row__val--link">idialogi@mail.ru</a>
+            </div>
+            <div class="cinfo-row">
+              <span class="cinfo-row__label">Телефон</span>
+              <a href="tel:+79202047695" class="cinfo-row__val cinfo-row__val--link">+7 920 204 76-95</a>
+            </div>
+            <div class="cinfo-row">
+              <span class="cinfo-row__label">Руководитель</span>
+              <span class="cinfo-row__val">Бабина Елена Ивановна</span>
+            </div>
+          </div>
+
+          <div class="cinfo-block">
+            <h3 class="cinfo-block__title">Мы в социальных сетях</h3>
+            <div class="cinfo-social">
+              <a href="https://vk.com/idialdobro" class="cinfo-social__link" target="_blank" rel="noopener">
+                <span class="cinfo-social__icon">ВК</span>
+                <div>
+                  <p class="cinfo-social__name">АНО «Центр интеллектуального диалога»</p>
+                  <p class="cinfo-social__url">vk.com/idialdobro</p>
+                </div>
+              </a>
+              <a href="https://vk.com/gubkinartpoint" class="cinfo-social__link" target="_blank" rel="noopener">
+                <span class="cinfo-social__icon">ВК</span>
+                <div>
+                  <p class="cinfo-social__name">АртPoint «Город. Люди. Ценности»</p>
+                  <p class="cinfo-social__url">vk.com/gubkinartpoint</p>
+                </div>
+              </a>
+              <a href="https://idialogi.nko31.ru" class="cinfo-social__link" target="_blank" rel="noopener">
+                <span class="cinfo-social__icon">🌐</span>
+                <div>
+                  <p class="cinfo-social__name">Основной сайт организации</p>
+                  <p class="cinfo-social__url">idialogi.nko31.ru</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="cinfo-block">
+            <h3 class="cinfo-block__title">Документы</h3>
+            <a href="#" class="cinfo-doc-link">Политика обработки персональных данных</a>
+            <div class="cinfo-rekviz">
+              <span>ИНН: 3127018727</span>
+              <span>ОГРН: 1213100006943</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Правая колонка: форма -->
+        <div class="contacts-form card">
+          <h2 class="contacts-form__title">Написать нам</h2>
+          <form action="mailto:idialogi@mail.ru" method="get" enctype="text/plain">
+
+            <div class="cform-row">
+              <label class="cform-label" for="ct-name">Имя <span class="cform-req">*</span></label>
+              <input class="cform-input" type="text" id="ct-name" name="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="cform-row">
+              <label class="cform-label" for="ct-email">E-mail <span class="cform-req">*</span></label>
+              <input class="cform-input" type="email" id="ct-email" name="email" placeholder="your@email.ru" required>
+            </div>
+            <div class="cform-row">
+              <label class="cform-label" for="ct-msg">Сообщение <span class="cform-req">*</span></label>
+              <textarea class="cform-input cform-textarea" id="ct-msg" name="body" rows="5" placeholder="Ваш вопрос или предложение..." required></textarea>
+            </div>
+            <div class="cform-row cform-row--check">
+              <label class="cform-check">
+                <input type="checkbox" required>
+                <span>Я даю согласие на обработку персональных данных в соответствии с <a href="#" class="cform-policy-link">Политикой конфиденциальности</a></span>
+              </label>
+            </div>
+            <button type="submit" class="btn-primary cform-submit">Отправить сообщение</button>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

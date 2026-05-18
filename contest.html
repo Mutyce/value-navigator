@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Конкурс «Наши ценности в кадре» | Ценностный навигатор для семьи</title>
+  <meta name="description" content="Конкурс видеороликов для семей: снимите 1–3 минуты о семейной ценности в действии и станьте частью сообщества проекта.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="header"></div>
+
+  <main>
+
+    <!-- ─── Hero ──────────────────────────────────────────── -->
+    <section class="page-hero section">
+      <div class="container">
+        <h1 class="page-hero__title">Конкурс «Наши ценности в кадре»</h1>
+        <p class="page-hero__subtitle">Снимите видео о семейной ценности и поделитесь с сообществом</p>
+      </div>
+    </section>
+
+    <!-- ─── О конкурсе ────────────────────────────────────── -->
+    <section class="contest-about section" id="contest">
+      <div class="container contest-about__grid">
+
+        <div class="contest-rules">
+          <h2 class="section-title">О конкурсе</h2>
+          <ul class="crules-list">
+            <li class="crules-item">
+              <span class="crules-item__label">Кто может участвовать</span>
+              <span class="crules-item__val">Семьи с детьми любого возраста</span>
+            </li>
+            <li class="crules-item">
+              <span class="crules-item__label">Что снимать</span>
+              <span class="crules-item__val">Видео 1–3 минуты о вашей семейной ценности в действии</span>
+            </li>
+            <li class="crules-item">
+              <span class="crules-item__label">Формат</span>
+              <span class="crules-item__val">Горизонтальное видео, загрузка на Яндекс.Диск или Облако</span>
+            </li>
+            <li class="crules-item">
+              <span class="crules-item__label">Призы</span>
+              <span class="crules-item__val">Дипломы участников, лучшие работы попадут на платформу</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contest-aside card">
+          <a href="#" class="btn-secondary contest-aside__pdf">📄 Скачать полное положение</a>
+          <div class="contest-dates">
+            <h3 class="contest-dates__title">Сроки</h3>
+            <div class="contest-date">
+              <span class="contest-date__label">Приём работ</span>
+              <span class="contest-date__val">до 30 апреля 2026</span>
+            </div>
+            <div class="contest-date">
+              <span class="contest-date__label">Подведение итогов</span>
+              <span class="contest-date__val">15 мая 2026</span>
+            </div>
+            <div class="contest-date">
+              <span class="contest-date__label">Награждение</span>
+              <span class="contest-date__val">25 мая 2026</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── Форма участия ──────────────────────────────────── -->
+    <section class="contest-form-section section" style="background-color:var(--color-warm)">
+      <div class="container contest-form-wrap">
+        <h2 class="section-title">Подать заявку</h2>
+
+        <form class="contest-form card" action="mailto:idialogi@mail.ru" method="get" enctype="text/plain">
+          <div class="cform-row">
+            <label class="cform-label" for="c-name">ФИО <span class="cform-req">*</span></label>
+            <input class="cform-input" type="text" id="c-name" name="name" placeholder="Иванова Мария Ивановна" required>
+          </div>
+          <div class="cform-row">
+            <label class="cform-label" for="c-email">E-mail <span class="cform-req">*</span></label>
+            <input class="cform-input" type="email" id="c-email" name="email" placeholder="your@email.ru" required>
+          </div>
+          <div class="cform-row">
+            <label class="cform-label" for="c-link">Ссылка на видео <span class="cform-req">*</span></label>
+            <input class="cform-input" type="url" id="c-link" name="video" placeholder="https://disk.yandex.ru/..." required>
+          </div>
+          <div class="cform-row cform-row--check">
+            <label class="cform-check">
+              <input type="checkbox" required>
+              <span>Я согласен(а) на публикацию видео на платформе проекта</span>
+            </label>
+          </div>
+          <button type="submit" class="btn-primary cform-submit">Отправить заявку</button>
+          <p class="cform-note">Принимая участие, вы соглашаетесь с положением конкурса</p>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- ─── Галерея ────────────────────────────────────────── -->
+    <section class="contest-gallery section">
+      <div class="container">
+        <h2 class="section-title">Лучшие работы</h2>
+        <div class="cgallery-grid">
+
+          <div class="cgallery-item">
+            <div class="cgallery-thumb">
+              <span class="cgallery-play">▶</span>
+            </div>
+            <p class="cgallery-family">Семья Ивановых</p>
+            <p class="cgallery-value">Ценность: Единство</p>
+          </div>
+
+          <div class="cgallery-item">
+            <div class="cgallery-thumb">
+              <span class="cgallery-play">▶</span>
+            </div>
+            <p class="cgallery-family">Семья Петровых</p>
+            <p class="cgallery-value">Ценность: Доверие</p>
+          </div>
+
+          <div class="cgallery-item">
+            <div class="cgallery-thumb">
+              <span class="cgallery-play">▶</span>
+            </div>
+            <p class="cgallery-family">Семья Сидоровых</p>
+            <p class="cgallery-value">Ценность: Традиции</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

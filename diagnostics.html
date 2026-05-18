@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Диагностика семейных ценностей | Ценностный навигатор для семьи</title>
+  <meta name="description" content="Ответьте на 7 вопросов вместе с ребёнком — система определит топ-3 ценности вашей семьи и подберёт сценарий совместного досуга.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="header"></div>
+
+  <main>
+    <section class="diag-wrap section">
+      <div class="container">
+
+        <!-- ─── Экран 1: Опросник ─────────────────────────── -->
+        <div id="quiz-screen" class="diag-screen">
+          <div class="diag-header">
+            <h1 class="diag-title">Диагностика семейных ценностей</h1>
+            <p class="diag-subtitle">Ответьте на 7 вопросов вместе с ребёнком — это займёт 5–7 минут</p>
+          </div>
+
+          <div class="diag-progress">
+            <div class="diag-progress__bar">
+              <div class="diag-progress__fill" id="progress-fill"></div>
+            </div>
+            <span class="diag-progress__label" id="progress-label">Вопрос 1 из 7</span>
+          </div>
+
+          <div class="diag-question card">
+            <p class="diag-question__text" id="question-text"></p>
+            <div class="diag-scale">
+              <button class="scale-btn" data-value="1">
+                <span class="scale-btn__num">1</span>
+                <span class="scale-btn__label">Никогда</span>
+              </button>
+              <button class="scale-btn" data-value="2">
+                <span class="scale-btn__num">2</span>
+                <span class="scale-btn__label"></span>
+              </button>
+              <button class="scale-btn" data-value="3">
+                <span class="scale-btn__num">3</span>
+                <span class="scale-btn__label">Иногда</span>
+              </button>
+              <button class="scale-btn" data-value="4">
+                <span class="scale-btn__num">4</span>
+                <span class="scale-btn__label"></span>
+              </button>
+              <button class="scale-btn" data-value="5">
+                <span class="scale-btn__num">5</span>
+                <span class="scale-btn__label">Всегда</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ─── Экран 2: Результат ────────────────────────── -->
+        <div id="result-screen" class="diag-screen diag-screen--hidden">
+          <div class="diag-header">
+            <h1 class="diag-title">Ценности вашей семьи</h1>
+            <p class="diag-subtitle">На основе ваших ответов мы определили главные ценности</p>
+          </div>
+
+          <div id="top-values" class="result-values"></div>
+
+          <div id="recommendation" class="result-rec"></div>
+
+          <div class="result-email card">
+            <h3 class="result-email__title">Получить результат на e-mail</h3>
+            <form class="result-email__form" id="email-form">
+              <input
+                type="email"
+                class="result-email__input"
+                id="email-input"
+                placeholder="your@email.ru"
+                required
+              >
+              <button type="submit" class="btn-primary">Отправить</button>
+            </form>
+          </div>
+
+          <div class="result-actions">
+            <button class="btn-secondary" onclick="location.reload()">Пройти заново</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/diagnostics.js"></script>
+</body>
+</html>
