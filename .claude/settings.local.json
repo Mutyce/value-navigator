@@ -3,7 +3,12 @@
     "allow": [
       "Bash(node --input-type=module)",
       "Bash(cp \"/Users/kostan/Downloads/logo_cennostny_navigator.svg\" /Users/kostan/value-navigator/images/logo.svg && ls -la /Users/kostan/value-navigator/images/)",
-      "Bash(git -C /Users/kostan/value-navigator status)"
+      "Bash(git -C /Users/kostan/value-navigator status)",
+      "Bash(git -C /Users/kostan/value-navigator add privacy-policy.html)",
+      "Bash(git -C /Users/kostan/value-navigator commit -m ' *)",
+      "Bash(git -C /Users/kostan/value-navigator push)",
+      "Bash(ls -la /mnt/user-data/uploads/ 2>/dev/null || echo \"uploads path not accessible\")",
+      "Bash(git -C /Users/kostan/value-navigator add contest.html materials.html files/ .claude/settings.local.json)"
     ]
   }
 }
