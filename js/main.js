@@ -14,7 +14,7 @@ function insertHeader() {
     <header class="site-header">
       <div class="container site-header__inner">
         <a href="index.html" class="site-header__logo">
-          <span class="site-header__logo-icon">🧭</span>
+          <img src="images/logo.svg" alt="" class="site-header__logo-icon" aria-hidden="true">
           <span class="site-header__logo-text">Ценностный навигатор</span>
         </a>
 
@@ -52,7 +52,10 @@ function insertFooter() {
         <div class="site-footer__top">
 
           <div class="site-footer__brand">
-            <a href="index.html" class="site-footer__logo">🧭 Ценностный навигатор</a>
+            <a href="index.html" class="site-footer__logo">
+              <img src="images/logo.svg" alt="" class="site-footer__logo-icon" aria-hidden="true">
+              <span>Ценностный навигатор</span>
+            </a>
             <p class="site-footer__desc">
               Проект помогает семьям определить общие ценности, наладить диалог
               и выстроить осмысленный досуг.
