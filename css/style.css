@@ -2804,3 +2804,30 @@ ul {
     transform: scale(0.85);
   }
 }
+
+/* Contest gallery — placeholder while contest is running */
+.cgallery-empty {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 48px 32px;
+}
+.cgallery-empty__icon {
+  display: block;
+  font-size: 56px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.cgallery-empty__title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-dark);
+  line-height: 1.35;
+  margin-bottom: 14px;
+}
+.cgallery-empty__text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6b5a50;
+  margin-bottom: 24px;
+}
