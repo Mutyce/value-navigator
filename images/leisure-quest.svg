@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="Квест-прогулка по городу">
+  <title>Квест-прогулка по городу</title>
+
+  <!-- Warm halo -->
+  <circle cx="100" cy="105" r="82" fill="#F5EDE0" opacity="0.5"/>
+
+  <!-- Soft shadow under map -->
+  <ellipse cx="100" cy="172" rx="76" ry="5" fill="#3D2B1F" opacity="0.12"/>
+
+  <!-- ===== Folded map paper ===== -->
+  <path d="M 26 56
+           L 75 64
+           L 125 56
+           L 174 64
+           L 178 162
+           L 128 154
+           L 78 162
+           L 28 154 Z"
+        fill="#FFFDF8" stroke="#7BA05B" stroke-width="1.8" stroke-linejoin="round"/>
+
+  <!-- Fold lines -->
+  <path d="M 75 64 L 78 162" stroke="#7BA05B" stroke-width="0.8" opacity="0.4" stroke-dasharray="2 2"/>
+  <path d="M 125 56 L 128 154" stroke="#7BA05B" stroke-width="0.8" opacity="0.4" stroke-dasharray="2 2"/>
+
+  <!-- Map terrain (green park areas) -->
+  <path d="M 38 84 Q 48 78 60 84 Q 64 96 56 102 Q 44 104 38 96 Z" fill="#7BA05B" opacity="0.32"/>
+  <path d="M 132 96 Q 148 92 158 100 Q 158 114 148 118 Q 134 114 132 104 Z" fill="#7BA05B" opacity="0.32"/>
+
+  <!-- Buildings (small squares) -->
+  <rect x="88" y="76" width="9" height="9" rx="1" fill="#E8784A" opacity="0.55"/>
+  <rect x="100" y="80" width="7" height="7" rx="1" fill="#E8784A" opacity="0.55"/>
+  <rect x="90" y="128" width="10" height="10" rx="1" fill="#E8784A" opacity="0.55"/>
+  <rect x="106" y="130" width="7" height="7" rx="1" fill="#E8784A" opacity="0.55"/>
+
+  <!-- River/road suggestion -->
+  <path d="M 30 130 Q 75 124 100 132 Q 135 138 175 126"
+        stroke="#7BA05B" stroke-width="2" fill="none" opacity="0.3"/>
+
+  <!-- ===== Route (dashed line from start to pin) ===== -->
+  <path d="M 50 140 Q 78 112 100 116 Q 132 122 144 82"
+        stroke="#E8784A" stroke-width="3.5"
+        stroke-dasharray="6 4" fill="none" stroke-linecap="round"/>
+
+  <!-- Start point (green circle with white centre) -->
+  <circle cx="50" cy="140" r="7" fill="#7BA05B"/>
+  <circle cx="50" cy="140" r="3" fill="#FFFFFF"/>
+
+  <!-- ===== Destination pin (teardrop) ===== -->
+  <g transform="translate(144 76)">
+    <!-- Pin shadow -->
+    <ellipse cx="0" cy="20" rx="6" ry="2" fill="#3D2B1F" opacity="0.18"/>
+    <!-- Pin body -->
+    <path d="M 0 -22
+             C -12 -22 -17 -12 -17 -4
+             C -17 8 0 22 0 22
+             C 0 22 17 8 17 -4
+             C 17 -12 12 -22 0 -22 Z"
+          fill="#E8784A" stroke="#C5562A" stroke-width="1.5"/>
+    <!-- Pin highlight -->
+    <ellipse cx="-6" cy="-12" rx="3" ry="5" fill="#FFFFFF" opacity="0.4"/>
+    <!-- Pin inner circle -->
+    <circle cx="0" cy="-6" r="5.5" fill="#FFFFFF"/>
+    <circle cx="0" cy="-6" r="2.5" fill="#E8784A"/>
+  </g>
+
+  <!-- ===== Compass rose (top-right corner of map) ===== -->
+  <g transform="translate(162 76)">
+    <circle r="9" fill="#FFFFFF" stroke="#7BA05B" stroke-width="1.2"/>
+    <polygon points="0,-7 -2,0 0,-1.5 2,0" fill="#E8784A"/>
+    <polygon points="0,7 -2,0 0,1.5 2,0" fill="#7BA05B" opacity="0.6"/>
+    <circle r="1.3" fill="#3D2B1F"/>
+  </g>
+
+  <!-- Sparkles -->
+  <g fill="#F5A623">
+    <circle cx="22" cy="92" r="2.5" opacity="0.7"/>
+    <circle cx="180" cy="135" r="2.5" opacity="0.7"/>
+    <path d="M 14 50 L 16 55 L 21 55 L 17 58 L 19 63 L 14 60 L 9 63 L 11 58 L 7 55 L 12 55 Z" opacity="0.8"/>
+  </g>
+</svg>

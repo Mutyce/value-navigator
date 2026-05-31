@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="Шкатулка историй">
+  <title>Шкатулка историй</title>
+
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F5A623" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#F5A623" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Warm halo -->
+  <circle cx="100" cy="125" r="78" fill="#F5EDE0" opacity="0.55"/>
+
+  <!-- Magical glow above chest -->
+  <ellipse cx="100" cy="78" rx="56" ry="32" fill="url(#glow)"/>
+
+  <!-- ===== Chest body ===== -->
+  <rect x="36" y="118" width="128" height="54" rx="5" fill="#E8784A"/>
+  <!-- Body bottom subtle shade -->
+  <rect x="36" y="165" width="128" height="7" rx="3" fill="#A04020" opacity="0.4"/>
+
+  <!-- Wood grain hints -->
+  <line x1="60" y1="125" x2="60" y2="168" stroke="#C5562A" stroke-width="0.8" opacity="0.6"/>
+  <line x1="140" y1="125" x2="140" y2="168" stroke="#C5562A" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- Iron bands (horizontal) -->
+  <rect x="32" y="118" width="136" height="6" fill="#7A4020"/>
+  <rect x="32" y="158" width="136" height="6" fill="#7A4020"/>
+
+  <!-- Iron corners -->
+  <path d="M 32 178 L 32 168 L 44 168" stroke="#7A4020" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M 168 178 L 168 168 L 156 168" stroke="#7A4020" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- ===== Chest lid (arched, open) ===== -->
+  <path d="M 32 118
+           L 32 100
+           Q 32 70 100 70
+           Q 168 70 168 100
+           L 168 118 Z"
+        fill="#E8784A"/>
+  <!-- Lid rim accent -->
+  <path d="M 32 100 Q 32 72 100 72 Q 168 72 168 100"
+        stroke="#C5562A" stroke-width="2.5" fill="none"/>
+  <!-- Lid centerline -->
+  <line x1="100" y1="72" x2="100" y2="100" stroke="#C5562A" stroke-width="1" opacity="0.5"/>
+
+  <!-- ===== Lock plate ===== -->
+  <rect x="86" y="130" width="28" height="22" rx="3" fill="#F5A623"/>
+  <rect x="86" y="130" width="28" height="3" rx="1.5" fill="#FFFFFF" opacity="0.4"/>
+  <!-- Keyhole -->
+  <circle cx="100" cy="139" r="2.5" fill="#3D2B1F"/>
+  <path d="M 100 139 L 100 146" stroke="#3D2B1F" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- ===== Floating "stories" above chest ===== -->
+  <!-- Centre heart -->
+  <path d="M 100 28
+           C 100 22 92 18 88 24
+           C 84 18 76 22 76 28
+           C 76 38 88 50 88 50
+           Z
+           M 100 28
+           C 100 22 108 18 112 24
+           C 116 18 124 22 124 28
+           C 124 38 112 50 112 50
+           Z"
+        fill="#F5A623"/>
+  <path d="M 88 50 L 100 60 L 112 50 Z" fill="#F5A623"/>
+  <!-- Heart highlight -->
+  <ellipse cx="84" cy="28" rx="3" ry="4" fill="#FFFFFF" opacity="0.5"/>
+
+  <!-- Star left -->
+  <path d="M 46 56 L 49 64 L 57 65 L 51 70 L 53 78 L 46 74 L 39 78 L 41 70 L 35 65 L 43 64 Z" fill="#E8784A"/>
+  <!-- Star right -->
+  <path d="M 154 56 L 157 64 L 165 65 L 159 70 L 161 78 L 154 74 L 147 78 L 149 70 L 143 65 L 151 64 Z" fill="#7BA05B"/>
+
+  <!-- Tiny sparkles -->
+  <circle cx="28" cy="92" r="2.2" fill="#F5A623" opacity="0.75"/>
+  <circle cx="172" cy="92" r="2.2" fill="#F5A623" opacity="0.75"/>
+  <circle cx="20" cy="130" r="2" fill="#F5A623" opacity="0.5"/>
+  <circle cx="180" cy="130" r="2" fill="#F5A623" opacity="0.5"/>
+</svg>

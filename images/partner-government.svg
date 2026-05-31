@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="Государственное учреждение">
+  <title>Государственное учреждение</title>
+
+  <!-- Halo -->
+  <circle cx="100" cy="100" r="82" fill="#F5EDE0" opacity="0.55"/>
+
+  <!-- Steps (3 stacked) -->
+  <rect x="14" y="170" width="172" height="8" rx="2" fill="#9C8056"/>
+  <rect x="20" y="162" width="160" height="8" rx="2" fill="#B8A88E"/>
+  <rect x="28" y="154" width="144" height="8" rx="2" fill="#D4C5A6"/>
+
+  <!-- Building base -->
+  <rect x="32" y="146" width="136" height="10" fill="#B8A88E"/>
+
+  <!-- Columns (4 columns) -->
+  <g>
+    <rect x="42" y="76" width="14" height="70" fill="#F5EBD6"/>
+    <rect x="42" y="76" width="3" height="70" fill="#D4C5A6"/>
+    <rect x="74" y="76" width="14" height="70" fill="#F5EBD6"/>
+    <rect x="74" y="76" width="3" height="70" fill="#D4C5A6"/>
+    <rect x="112" y="76" width="14" height="70" fill="#F5EBD6"/>
+    <rect x="112" y="76" width="3" height="70" fill="#D4C5A6"/>
+    <rect x="144" y="76" width="14" height="70" fill="#F5EBD6"/>
+    <rect x="144" y="76" width="3" height="70" fill="#D4C5A6"/>
+  </g>
+
+  <!-- Column capitals -->
+  <g fill="#B8A88E">
+    <rect x="38" y="70" width="22" height="8" rx="1"/>
+    <rect x="70" y="70" width="22" height="8" rx="1"/>
+    <rect x="108" y="70" width="22" height="8" rx="1"/>
+    <rect x="140" y="70" width="22" height="8" rx="1"/>
+  </g>
+
+  <!-- Column bases -->
+  <g fill="#9C8056">
+    <rect x="38" y="142" width="22" height="6"/>
+    <rect x="70" y="142" width="22" height="6"/>
+    <rect x="108" y="142" width="22" height="6"/>
+    <rect x="140" y="142" width="22" height="6"/>
+  </g>
+
+  <!-- Architrave / entablature -->
+  <rect x="28" y="62" width="144" height="10" fill="#B8A88E"/>
+  <rect x="28" y="62" width="144" height="3" fill="#FFFFFF" opacity="0.3"/>
+
+  <!-- Pediment (triangle) -->
+  <polygon points="28,62 100,28 172,62" fill="#F5EBD6"/>
+  <polygon points="28,62 100,28 172,62" fill="none" stroke="#B8A88E" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Small star/emblem on pediment -->
+  <path d="M 100 42 L 102 48 L 108 48 L 103 52 L 105 58 L 100 54 L 95 58 L 97 52 L 92 48 L 98 48 Z" fill="#E8784A"/>
+
+  <!-- Door (between middle columns) -->
+  <rect x="90" y="106" width="20" height="40" fill="#7A6850"/>
+  <rect x="90" y="106" width="20" height="3" fill="#3D2B1F"/>
+  <circle cx="105" cy="126" r="1.5" fill="#F5A623"/>
+</svg>

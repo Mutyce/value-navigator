@@ -1,7 +1,7 @@
 const leisureData = {
   1: {
     color:    '#E8784A',
-    emoji:    '🗃️',
+    image:    'images/leisure-stories.svg',
     title:    'Шкатулка историй',
     subtitle: 'Вечерний ритуал, который сближает семью через истории',
     values:   ['Близость', 'Доверие', 'Единство'],
@@ -23,7 +23,7 @@ const leisureData = {
   },
   2: {
     color:    '#7BA05B',
-    emoji:    '📖',
+    image:    'images/leisure-cookbook.svg',
     title:    'Семейная кулинарная книга',
     subtitle: 'Готовите вместе и создаёте живую историю семьи через рецепты',
     values:   ['Единство', 'Традиции', 'Память'],
@@ -45,7 +45,7 @@ const leisureData = {
   },
   3: {
     color:    '#5B7BA0',
-    emoji:    '🎬',
+    image:    'images/leisure-cinema.svg',
     title:    'Дворовый кинозал',
     subtitle: 'Семейный просмотр фильма с обсуждением — развивает общие интересы',
     values:   ['Единство', 'Радость', 'Близость'],
@@ -67,7 +67,7 @@ const leisureData = {
   },
   4: {
     color:    '#A07B5B',
-    emoji:    '🎲',
+    image:    'images/leisure-games.svg',
     title:    'Игротека выходного дня',
     subtitle: 'Настольные игры без гаджетов — смех, азарт и настоящее общение',
     values:   ['Радость', 'Единство', 'Благодарность'],
@@ -89,7 +89,7 @@ const leisureData = {
   },
   5: {
     color:    '#5BA08A',
-    emoji:    '🗺️',
+    image:    'images/leisure-quest.svg',
     title:    'Квест-прогулка по городу',
     subtitle: 'Исследуете город по заданиям-загадкам — приключение прямо за порогом',
     values:   ['Взаимопомощь', 'Познание', 'Единство'],
@@ -174,7 +174,7 @@ function renderHero(data) {
           <span class="breadcrumb__current">${data.title}</span>
         </nav>
         <div class="detail-hero__body">
-          <span class="detail-hero__emoji">${data.emoji}</span>
+          <img src="${data.image}" alt="" class="detail-hero__emoji">
           <div class="detail-hero__content">
             <h1 class="detail-hero__title">${data.title}</h1>
             <p class="detail-hero__subtitle">${data.subtitle}</p>
@@ -252,7 +252,7 @@ function renderActions(data) {
     <section class="detail-section section">
       <div class="container detail-section__narrow">
         <div class="detail-actions">
-          <a href="#" class="btn-secondary detail-actions__pdf" onclick="return false">
+          <a href="javascript:void(0)" class="btn-secondary detail-actions__pdf" onclick="window.print();return false;">
             📄 Скачать PDF-версию
           </a>
           <div class="detail-actions__share">
@@ -272,7 +272,7 @@ function renderOthers(currentId) {
     const d = leisureData[id];
     return `
       <a href="leisure-detail.html?id=${id}" class="other-card card">
-        <span class="other-card__emoji">${d.emoji}</span>
+        <img src="${d.image}" alt="" class="other-card__emoji">
         <h3 class="other-card__title">${d.title}</h3>
         <p class="other-card__tags">${d.tags.join(' · ')}</p>
       </a>
@@ -317,3 +317,9 @@ function renderNotFound() {
 
 // ─── Boot ─────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', render);
+
+// If page restored from BFCache (back/forward navigation), force fresh reload
+// so updated JS/template runs instead of showing stale cached DOM.
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) window.location.reload();
+});

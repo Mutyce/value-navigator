@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" role="img" aria-label="Семья перед уютным домом">
+  <title>Семья перед уютным домом</title>
+
+  <defs>
+    <!-- Reusable heart -->
+    <symbol id="heart" viewBox="0 0 24 22">
+      <path d="M 12 22 C 12 22 1 14 1 8 A 5.5 5.5 0 0 1 12 6 A 5.5 5.5 0 0 1 23 8 C 23 14 12 22 12 22 Z"/>
+    </symbol>
+
+    <linearGradient id="roofShade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EE8E62"/>
+      <stop offset="50%" stop-color="#E8784A"/>
+      <stop offset="100%" stop-color="#C5562A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Warm halo -->
+  <ellipse cx="200" cy="170" rx="195" ry="135" fill="#F5EDE0" opacity="0.55"/>
+
+  <!-- Ground -->
+  <ellipse cx="200" cy="288" rx="175" ry="7" fill="#7BA05B" opacity="0.22"/>
+
+  <!-- ===================== HOUSE ===================== -->
+
+  <!-- House body -->
+  <rect x="76" y="128" width="248" height="162" rx="18" fill="#F5DDC4"/>
+  <!-- Body bottom subtle band -->
+  <rect x="76" y="278" width="248" height="12" rx="6" fill="#E8C8A5" opacity="0.6"/>
+  <!-- Body right-edge shadow -->
+  <path d="M 318 132 Q 324 132 324 138 L 324 282 Q 324 288 318 288 Z" fill="#000000" opacity="0.06"/>
+
+  <!-- Roof (rounded triangle with overhang) -->
+  <path d="M 46 152
+           Q 46 146 53 142
+           L 195 52
+           Q 200 48 205 52
+           L 354 142
+           Q 354 152 354 152
+           Q 354 158 347 158
+           L 53 158
+           Q 46 158 46 152 Z"
+        fill="url(#roofShade)"/>
+
+  <!-- Roof apex highlight -->
+  <path d="M 195 56 Q 200 52 205 56 L 200 62 Z" fill="#FFFFFF" opacity="0.25"/>
+
+  <!-- Gable heart -->
+  <use href="#heart" x="186" y="88" width="28" height="26" fill="#F5A623"/>
+
+  <!-- Chimney -->
+  <rect x="258" y="64" width="28" height="46" rx="5" fill="#C5562A"/>
+  <rect x="254" y="58" width="36" height="11" rx="4" fill="#C5562A"/>
+  <rect x="254" y="58" width="36" height="3" rx="1.5" fill="#FFFFFF" opacity="0.22"/>
+
+  <!-- Smoke -->
+  <circle cx="272" cy="48" r="9" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="288" cy="34" r="7" fill="#FFFFFF" opacity="0.78"/>
+  <circle cx="302" cy="22" r="5" fill="#FFFFFF" opacity="0.6"/>
+
+  <!-- Heart-shaped windows -->
+  <g>
+    <!-- Left window -->
+    <circle cx="115" cy="180" r="18" fill="#FFFFFF" opacity="0.5"/>
+    <use href="#heart" x="103" y="168" width="24" height="22" fill="#F5A623"/>
+    <use href="#heart" x="105" y="170" width="20" height="18" fill="#FFD37A" opacity="0.7"/>
+    <!-- Right window -->
+    <circle cx="285" cy="180" r="18" fill="#FFFFFF" opacity="0.5"/>
+    <use href="#heart" x="273" y="168" width="24" height="22" fill="#F5A623"/>
+    <use href="#heart" x="275" y="170" width="20" height="18" fill="#FFD37A" opacity="0.7"/>
+  </g>
+
+  <!-- ===================== FAMILY ===================== -->
+
+  <!-- ===== Parent left (dad) ===== -->
+  <!-- Body (rounded pear, draws first so head sits on top cleanly) -->
+  <path d="M 125 220
+           C 152 222 156 240 156 256
+           C 156 274 152 287 145 290
+           L 105 290
+           C 98 287 94 274 94 256
+           C 94 240 98 222 125 220 Z"
+        fill="#7BA05B"/>
+  <!-- Head -->
+  <circle cx="125" cy="210" r="20" fill="#7BA05B"/>
+  <!-- Subtle head highlight -->
+  <ellipse cx="118" cy="204" rx="5" ry="6" fill="#FFFFFF" opacity="0.18"/>
+
+  <!-- ===== Child (centre, smaller) ===== -->
+  <!-- Body -->
+  <path d="M 200 232
+           C 222 234 224 250 224 264
+           C 224 278 220 287 215 290
+           L 185 290
+           C 180 287 176 278 176 264
+           C 176 250 178 234 200 232 Z"
+        fill="#7BA05B"/>
+  <!-- Head -->
+  <circle cx="200" cy="223" r="17" fill="#7BA05B"/>
+  <ellipse cx="194" cy="218" rx="4" ry="5" fill="#FFFFFF" opacity="0.18"/>
+
+  <!-- ===== Parent right (mom) ===== -->
+  <!-- Body -->
+  <path d="M 275 220
+           C 302 222 306 240 306 256
+           C 306 274 302 287 295 290
+           L 255 290
+           C 248 287 244 274 244 256
+           C 244 240 248 222 275 220 Z"
+        fill="#7BA05B"/>
+  <!-- Skirt flare -->
+  <path d="M 246 276
+           Q 232 286 234 292
+           L 316 292
+           Q 318 286 304 276 Z"
+        fill="#7BA05B"/>
+  <!-- Head -->
+  <circle cx="275" cy="210" r="20" fill="#7BA05B"/>
+  <!-- Hair (slightly wider top) -->
+  <ellipse cx="275" cy="200" rx="22" ry="11" fill="#7BA05B"/>
+  <ellipse cx="268" cy="204" rx="5" ry="6" fill="#FFFFFF" opacity="0.18"/>
+
+  <!-- ===== Joined arms (chubby, rounded) ===== -->
+  <!-- Parent left → child -->
+  <path d="M 152 256 Q 168 260 180 264" stroke="#7BA05B" stroke-width="18" stroke-linecap="round" fill="none"/>
+  <!-- Child → parent right -->
+  <path d="M 220 264 Q 232 260 248 256" stroke="#7BA05B" stroke-width="18" stroke-linecap="round" fill="none"/>
+
+  <!-- Hand-join markers -->
+  <circle cx="182" cy="264" r="8" fill="#7BA05B"/>
+  <circle cx="218" cy="264" r="8" fill="#7BA05B"/>
+
+  <!-- ===================== SPARKLES ===================== -->
+  <g fill="#F5A623">
+    <circle cx="42" cy="220" r="3" opacity="0.65"/>
+    <circle cx="358" cy="220" r="3" opacity="0.65"/>
+    <circle cx="32" cy="250" r="2.2" opacity="0.5"/>
+    <circle cx="368" cy="250" r="2.2" opacity="0.5"/>
+    <path d="M 30 175 L 32 180 L 37 180 L 33 183 L 35 188 L 30 185 L 25 188 L 27 183 L 23 180 L 28 180 Z" opacity="0.85"/>
+    <path d="M 370 175 L 372 180 L 377 180 L 373 183 L 375 188 L 370 185 L 365 188 L 367 183 L 363 180 L 368 180 Z" opacity="0.85"/>
+  </g>
+</svg>

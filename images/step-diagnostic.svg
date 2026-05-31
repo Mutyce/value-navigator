@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="Планшет с галочками и карандаш">
+  <title>Планшет с галочками и карандаш</title>
+
+  <!-- Soft drop shadow -->
+  <ellipse cx="100" cy="184" rx="58" ry="6" fill="#3D2B1F" opacity="0.12"/>
+
+  <!-- Clipboard body -->
+  <rect x="48" y="42" width="104" height="138" rx="10" fill="#E8784A"/>
+  <!-- Body edge highlight -->
+  <rect x="48" y="42" width="104" height="4" rx="2" fill="#FFFFFF" opacity="0.18"/>
+  <!-- Body shadow on right edge -->
+  <rect x="146" y="42" width="6" height="138" rx="3" fill="#000000" opacity="0.08"/>
+
+  <!-- Inner paper -->
+  <rect x="58" y="58" width="84" height="116" rx="5" fill="#FFFFFF"/>
+  <!-- Paper subtle inner shadow -->
+  <rect x="58" y="58" width="84" height="3" fill="#000000" opacity="0.05"/>
+
+  <!-- Clip base -->
+  <rect x="76" y="32" width="48" height="22" rx="5" fill="#B85A30"/>
+  <!-- Clip top -->
+  <rect x="86" y="22" width="28" height="16" rx="4" fill="#9B4A28"/>
+  <!-- Clip rivet -->
+  <circle cx="100" cy="44" r="3.2" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="100" cy="44" r="1.4" fill="#9B4A28"/>
+
+  <!-- ===== Check row 1 (checked) ===== -->
+  <rect x="66" y="74" width="14" height="14" rx="3" fill="#7BA05B"/>
+  <path d="M 69 81 L 73 85 L 78 78" stroke="#FFFFFF" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="86" y="78" width="48" height="6" rx="3" fill="#E8784A" opacity="0.32"/>
+
+  <!-- ===== Check row 2 (checked) ===== -->
+  <rect x="66" y="100" width="14" height="14" rx="3" fill="#7BA05B"/>
+  <path d="M 69 107 L 73 111 L 78 104" stroke="#FFFFFF" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="86" y="104" width="44" height="6" rx="3" fill="#E8784A" opacity="0.32"/>
+
+  <!-- ===== Check row 3 (unchecked) ===== -->
+  <rect x="66" y="126" width="14" height="14" rx="3" fill="none" stroke="#7BA05B" stroke-width="2.2"/>
+  <rect x="86" y="130" width="36" height="6" rx="3" fill="#E8784A" opacity="0.2"/>
+
+  <!-- Sparkle next to completed rows -->
+  <path d="M 50 70 L 52 75 L 57 75 L 53 78 L 55 83 L 50 80 L 45 83 L 47 78 L 43 75 L 48 75 Z" fill="#F5A623"/>
+
+  <!-- ===== Pencil ===== -->
+  <g transform="translate(132 116) rotate(38)">
+    <!-- Eraser cap (pink) -->
+    <rect x="-22" y="-7" width="11" height="14" rx="3" fill="#E8784A"/>
+    <rect x="-22" y="-7" width="11" height="3" rx="1.5" fill="#FFFFFF" opacity="0.25"/>
+    <!-- Metal ferrule with ridges -->
+    <rect x="-11" y="-7" width="11" height="14" fill="#BFA77A"/>
+    <rect x="-11" y="-7" width="11" height="2" fill="#FFFFFF" opacity="0.35"/>
+    <line x1="-9" y1="-3" x2="-2" y2="-3" stroke="#8A7548" stroke-width="0.8"/>
+    <line x1="-9" y1="3" x2="-2" y2="3" stroke="#8A7548" stroke-width="0.8"/>
+    <!-- Body (yellow) -->
+    <rect x="0" y="-7" width="58" height="14" fill="#F5A623"/>
+    <rect x="0" y="-7" width="58" height="3" fill="#FFFFFF" opacity="0.28"/>
+    <rect x="0" y="4" width="58" height="3" fill="#000000" opacity="0.1"/>
+    <!-- Wooden cone tip -->
+    <polygon points="58,-7 72,0 58,7" fill="#E8C394"/>
+    <polygon points="58,-7 72,0 58,0" fill="#000000" opacity="0.08"/>
+    <!-- Graphite point -->
+    <polygon points="68,-2.5 73,0 68,2.5" fill="#3D2B1F"/>
+  </g>
+</svg>

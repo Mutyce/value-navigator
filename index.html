@@ -6,7 +6,7 @@
   <title>Ценностный навигатор для семьи | Откройте ценности вашей семьи</title>
   <meta name="description" content="Бесплатный онлайн-ресурс для семей: пройдите диагностику из 7 вопросов и получите персональные сценарии семейного досуга на основе ваших ценностей.">
   <link rel="icon" type="image/svg+xml" href="images/logo.svg">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=10">
 </head>
 <body>
 
@@ -42,7 +42,7 @@
         </div>
         <div class="hero__visual">
           <div class="hero__card">
-            <span class="hero__card-icon">🏠</span>
+            <img src="images/family-values.svg" alt="Семья" class="hero__card-icon">
             <p class="hero__card-text">Ваша семья.<br>Ваши ценности.</p>
           </div>
         </div>
@@ -56,19 +56,19 @@
         <div class="how-it-works__steps">
           <div class="how-it-works__step">
             <div class="step__number">1</div>
-            <div class="step__icon">📋</div>
+            <img src="images/step-diagnostic.svg" alt="" class="step__icon">
             <h3 class="step__title">Пройдите диагностику</h3>
             <p class="step__desc">Ответьте на 7 вопросов вместе с ребёнком</p>
           </div>
           <div class="how-it-works__step">
             <div class="step__number">2</div>
-            <div class="step__icon">💡</div>
+            <img src="images/step-insights.svg" alt="" class="step__icon">
             <h3 class="step__title">Узнайте ваши ценности</h3>
             <p class="step__desc">Система определит топ-3 ценности вашей семьи</p>
           </div>
           <div class="how-it-works__step">
             <div class="step__number">3</div>
-            <div class="step__icon">🎯</div>
+            <img src="images/step-practice.svg" alt="" class="step__icon">
             <h3 class="step__title">Практикуйте вместе</h3>
             <p class="step__desc">Получите сценарии досуга под ваши ценности</p>
           </div>
@@ -83,31 +83,31 @@
         <p class="leisure-preview__subtitle">Выберите модель, которая откликается вашей семье</p>
         <div class="leisure-preview__grid">
           <div class="card leisure-card">
-            <span class="leisure-card__icon">🗃️</span>
+            <img src="images/leisure-stories.svg" alt="" class="leisure-card__icon">
             <h3 class="leisure-card__title">Шкатулка историй</h3>
             <p class="leisure-card__desc">Семья собирается вечером и делится историями. Укрепляет доверие и близость</p>
             <a href="leisure-detail.html?id=1" class="leisure-card__link">Подробнее →</a>
           </div>
           <div class="card leisure-card">
-            <span class="leisure-card__icon">📖</span>
+            <img src="images/leisure-cookbook.svg" alt="" class="leisure-card__icon">
             <h3 class="leisure-card__title">Семейная кулинарная книга</h3>
             <p class="leisure-card__desc">Готовите вместе и записываете рецепты с историями. Создаёт общие воспоминания</p>
             <a href="leisure-detail.html?id=2" class="leisure-card__link">Подробнее →</a>
           </div>
           <div class="card leisure-card">
-            <span class="leisure-card__icon">🎬</span>
+            <img src="images/leisure-cinema.svg" alt="" class="leisure-card__icon">
             <h3 class="leisure-card__title">Дворовый кинозал</h3>
             <p class="leisure-card__desc">Организуете семейный просмотр с обсуждением. Развивает общие интересы</p>
             <a href="leisure-detail.html?id=3" class="leisure-card__link">Подробнее →</a>
           </div>
           <div class="card leisure-card">
-            <span class="leisure-card__icon">🎲</span>
+            <img src="images/leisure-games.svg" alt="" class="leisure-card__icon">
             <h3 class="leisure-card__title">Игротека выходного дня</h3>
             <p class="leisure-card__desc">Играете в настольные игры без гаджетов. Радость и единство</p>
             <a href="leisure-detail.html?id=4" class="leisure-card__link">Подробнее →</a>
           </div>
           <div class="card leisure-card">
-            <span class="leisure-card__icon">🗺️</span>
+            <img src="images/leisure-quest.svg" alt="" class="leisure-card__icon">
             <h3 class="leisure-card__title">Квест-прогулка по городу</h3>
             <p class="leisure-card__desc">Исследуете город вместе по заданиям. Взаимопомощь и познание</p>
             <a href="leisure-detail.html?id=5" class="leisure-card__link">Подробнее →</a>
@@ -160,10 +160,12 @@
         <h2 class="section-title video-section__title">Видео дня</h2>
         <div class="video-section__wrapper">
           <div class="video-section__player">
-            <span class="video-section__play">▶</span>
-            <span class="video-section__placeholder">Видео появится здесь</span>
+            <iframe class="video-section__iframe"
+                    src="https://vkvideo.ru/video_ext.php?oid=-226613844&id=456239020&hash=f0e6a514ff412e8f&hd=3"
+                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+                    allowfullscreen></iframe>
           </div>
-          <p class="video-section__caption">Советы психолога: как провести семейный вечер</p>
+          <p class="video-section__caption">Семья Антоненко: как провести семейный вечер</p>
         </div>
       </div>
     </section>
@@ -181,6 +183,6 @@
 
   <div id="footer"></div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=10"></script>
 </body>
 </html>

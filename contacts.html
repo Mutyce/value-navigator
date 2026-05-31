@@ -6,7 +6,8 @@
   <title>Контакты | Ценностный навигатор для семьи</title>
   <meta name="description" content="Контакты АНО «Центр интеллектуального диалога»: e-mail idialogi@mail.ru, телефон, социальные сети и форма обратной связи.">
   <link rel="icon" type="image/svg+xml" href="images/logo.svg">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=10">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 
@@ -86,7 +87,7 @@
         <!-- Правая колонка: форма -->
         <div class="contacts-form card">
           <h2 class="contacts-form__title">Написать нам</h2>
-          <form action="https://formspree.io/f/xwvzkgdg" method="POST">
+          <form action="https://formspree.io/f/xwvzkgdg" method="POST" onsubmit="return validateRecaptcha(this)">
 
             <div class="cform-row">
               <label class="cform-label" for="ct-name">Имя <span class="cform-req">*</span></label>
@@ -106,6 +107,9 @@
                 <span>Я даю согласие на обработку персональных данных в соответствии с <a href="privacy-policy.html" class="cform-policy-link" target="_blank">Политикой конфиденциальности</a></span>
               </label>
             </div>
+            <div class="cform-row cform-captcha">
+              <div class="g-recaptcha" data-sitekey="6Ld1vAUtAAAAAM8aZEStvsnW9QC_IMAyF7Ecjwfe"></div>
+            </div>
             <button type="submit" class="btn-primary cform-submit">Отправить сообщение</button>
 
           </form>
@@ -118,6 +122,6 @@
 
   <div id="footer"></div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=10"></script>
 </body>
 </html>

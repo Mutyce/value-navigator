@@ -19,15 +19,15 @@ const questionValues = {
 };
 
 const recommendations = {
-  'Близость':      { title: 'Шкатулка историй',          emoji: '🗃️', desc: 'Вечерние рассказы укрепят доверие и близость',          link: 'leisure-detail.html?id=1' },
-  'Единство':      { title: 'Семейная кулинарная книга', emoji: '📖', desc: 'Готовьте вместе — создавайте общие воспоминания',       link: 'leisure-detail.html?id=2' },
-  'Поддержка':     { title: 'Шкатулка историй',          emoji: '🗃️', desc: 'Делитесь историями — стройте поддержку',               link: 'leisure-detail.html?id=1' },
-  'Благодарность': { title: 'Игротека выходного дня',    emoji: '🎲', desc: 'Игры учат ценить друг друга',                           link: 'leisure-detail.html?id=4' },
-  'Традиции':      { title: 'Семейная кулинарная книга', emoji: '📖', desc: 'Рецепты с историями — живая память семьи',              link: 'leisure-detail.html?id=2' },
-  'Взаимопомощь':  { title: 'Квест-прогулка по городу', emoji: '🗺️', desc: 'Задания требуют помощи друг другу',                     link: 'leisure-detail.html?id=5' },
-  'Забота':        { title: 'Квест-прогулка по городу', emoji: '🗺️', desc: 'Забота проявляется в совместных испытаниях',            link: 'leisure-detail.html?id=5' },
-  'Доверие':       { title: 'Шкатулка историй',          emoji: '🗃️', desc: 'Откровенные истории строят доверие',                   link: 'leisure-detail.html?id=1' },
-  'Память':        { title: 'Семейная кулинарная книга', emoji: '📖', desc: 'Сохраняйте семейную историю через рецепты',             link: 'leisure-detail.html?id=2' }
+  'Близость':      { title: 'Шкатулка историй',          image: 'images/leisure-stories.svg',  desc: 'Вечерние рассказы укрепят доверие и близость',          link: 'leisure-detail.html?id=1' },
+  'Единство':      { title: 'Семейная кулинарная книга', image: 'images/leisure-cookbook.svg', desc: 'Готовьте вместе — создавайте общие воспоминания',       link: 'leisure-detail.html?id=2' },
+  'Поддержка':     { title: 'Шкатулка историй',          image: 'images/leisure-stories.svg',  desc: 'Делитесь историями — стройте поддержку',               link: 'leisure-detail.html?id=1' },
+  'Благодарность': { title: 'Игротека выходного дня',    image: 'images/leisure-games.svg',    desc: 'Игры учат ценить друг друга',                           link: 'leisure-detail.html?id=4' },
+  'Традиции':      { title: 'Семейная кулинарная книга', image: 'images/leisure-cookbook.svg', desc: 'Рецепты с историями — живая память семьи',              link: 'leisure-detail.html?id=2' },
+  'Взаимопомощь':  { title: 'Квест-прогулка по городу',  image: 'images/leisure-quest.svg',    desc: 'Задания требуют помощи друг другу',                     link: 'leisure-detail.html?id=5' },
+  'Забота':        { title: 'Квест-прогулка по городу',  image: 'images/leisure-quest.svg',    desc: 'Забота проявляется в совместных испытаниях',            link: 'leisure-detail.html?id=5' },
+  'Доверие':       { title: 'Шкатулка историй',          image: 'images/leisure-stories.svg',  desc: 'Откровенные истории строят доверие',                   link: 'leisure-detail.html?id=1' },
+  'Память':        { title: 'Семейная кулинарная книга', image: 'images/leisure-cookbook.svg', desc: 'Сохраняйте семейную историю через рецепты',             link: 'leisure-detail.html?id=2' }
 };
 
 // ─── State ──────────────────────────────────────────────
@@ -116,8 +116,13 @@ function calcScores() {
 }
 
 function getTopValues(scores, count = 3) {
-  // Max possible score per value: appears in at most 2 questions × 5 = 10
-  const maxPossible = 10;
+  // Real max per value: 5 points × number of questions it appears in
+  const maxScores = {};
+  Object.values(questionValues).forEach(vals => {
+    vals.forEach(v => {
+      maxScores[v] = (maxScores[v] || 0) + 5;
+    });
+  });
 
   return Object.entries(scores)
     .sort((a, b) => b[1] - a[1])
@@ -125,7 +130,7 @@ function getTopValues(scores, count = 3) {
     .map(([name, score]) => ({
       name,
       score,
-      percent: Math.round((score / maxPossible) * 100)
+      percent: Math.min(100, Math.round((score / (maxScores[name] || 5)) * 100))
     }));
 }
 
@@ -151,12 +156,12 @@ function showResults() {
 }
 
 function renderTopValues(top) {
-  const medals = ['🥇', '🥈', '🥉'];
+  const medals = ['images/medal-gold.svg', 'images/medal-silver.svg', 'images/medal-bronze.svg'];
 
   topValuesEl.innerHTML = top.map((item, i) => `
     <div class="value-card card">
       <div class="value-card__head">
-        <span class="value-card__medal">${medals[i]}</span>
+        <img src="${medals[i]}" alt="" class="value-card__medal">
         <span class="value-card__name">${item.name}</span>
         <span class="value-card__percent">${item.percent}%</span>
       </div>
@@ -175,7 +180,7 @@ function renderRecommendation(valueName) {
     <div class="rec-card card">
       <p class="rec-card__label">Рекомендуемый сценарий досуга</p>
       <div class="rec-card__body">
-        <span class="rec-card__emoji">${rec.emoji}</span>
+        <img src="${rec.image}" alt="" class="rec-card__emoji">
         <div class="rec-card__info">
           <h3 class="rec-card__title">${rec.title}</h3>
           <p class="rec-card__desc">${rec.desc}</p>
@@ -192,3 +197,9 @@ function buildEmailBody() {
   const lines  = top.map((v, i) => `${i + 1}. ${v.name} — ${v.percent}%`).join('\n');
   return `Результат диагностики «Ценностный навигатор для семьи»\n\nГлавные ценности вашей семьи:\n${lines}\n\nПолный результат: https://idialogi.nko31.ru`;
 }
+
+
+// If page restored from BFCache (back/forward navigation), force fresh reload
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted) window.location.reload();
+});

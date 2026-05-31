@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="120" viewBox="0 0 100 120" role="img" aria-label="Третье место">
+  <title>Третье место</title>
+
+  <defs>
+    <radialGradient id="bronzeRing" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#E8B084"/>
+      <stop offset="60%" stop-color="#B87A40"/>
+      <stop offset="100%" stop-color="#7A4F1F"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ribbons -->
+  <polygon points="20,2 38,2 44,38 30,32 20,38" fill="#5B7BA0"/>
+  <polygon points="80,2 62,2 56,38 70,32 80,38" fill="#7BA0C8"/>
+  <polygon points="20,2 30,32 20,38" fill="#3D5B82"/>
+  <polygon points="80,2 70,32 80,38" fill="#3D5B82"/>
+
+  <!-- Medal outer ring -->
+  <circle cx="50" cy="75" r="36" fill="url(#bronzeRing)"/>
+  <!-- Inner disk -->
+  <circle cx="50" cy="75" r="28" fill="#D9A062"/>
+  <!-- Inner edge ring -->
+  <circle cx="50" cy="75" r="28" fill="none" stroke="#7A4F1F" stroke-width="1.5"/>
+
+  <!-- Number 3 -->
+  <text x="50" y="86" font-family="Arial, sans-serif" font-size="34" font-weight="900"
+        fill="#5C3818" text-anchor="middle">3</text>
+
+  <!-- Shine highlight -->
+  <ellipse cx="38" cy="60" rx="7" ry="11" fill="#FFFFFF" opacity="0.45" transform="rotate(-25 38 60)"/>
+</svg>

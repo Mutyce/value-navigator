@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="Сообщество">
+  <title>Сообщество</title>
+
+  <!-- Halo -->
+  <circle cx="100" cy="105" r="82" fill="#F5EDE0" opacity="0.55"/>
+
+  <!-- Connecting ring (arms around each other) -->
+  <circle cx="100" cy="110" r="50" fill="none" stroke="#F5A623" stroke-width="5"
+          stroke-linecap="round" stroke-dasharray="30 22" opacity="0.55"/>
+
+  <!-- Top figure (orange) -->
+  <circle cx="100" cy="48" r="20" fill="#E8784A"/>
+  <path d="M 80 70 Q 100 64 120 70 L 124 90 Q 100 96 76 90 Z" fill="#E8784A"/>
+
+  <!-- Bottom-left figure (green) -->
+  <circle cx="48" cy="138" r="20" fill="#7BA05B"/>
+  <path d="M 28 160 Q 48 154 68 160 L 72 178 Q 48 184 24 178 Z" fill="#7BA05B"/>
+
+  <!-- Bottom-right figure (yellow) -->
+  <circle cx="152" cy="138" r="20" fill="#F5A623"/>
+  <path d="M 132 160 Q 152 154 172 160 L 176 178 Q 152 184 128 178 Z" fill="#F5A623"/>
+
+  <!-- Center heart -->
+  <path d="M 100 100
+           C 100 92 88 86 84 92
+           C 80 86 70 92 70 100
+           C 70 113 86 128 86 128
+           Z
+           M 100 100
+           C 100 92 112 86 116 92
+           C 120 86 130 92 130 100
+           C 130 113 114 128 114 128
+           Z" fill="#E8784A"/>
+  <path d="M 86 128 L 100 140 L 114 128 Z" fill="#E8784A"/>
+  <ellipse cx="83" cy="100" rx="3.5" ry="5" fill="#FFFFFF" opacity="0.4"/>
+
+  <!-- Sparkles -->
+  <g fill="#F5A623">
+    <circle cx="18" cy="80" r="2.5" opacity="0.7"/>
+    <circle cx="182" cy="80" r="2.5" opacity="0.7"/>
+    <circle cx="100" cy="180" r="2.5" opacity="0.6"/>
+  </g>
+</svg>

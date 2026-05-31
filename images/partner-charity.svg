@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="Благотворительная поддержка">
+  <title>Благотворительная поддержка</title>
+
+  <defs>
+    <linearGradient id="heartBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7B9BC8"/>
+      <stop offset="100%" stop-color="#3D5B82"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Soft blue halo -->
+  <circle cx="100" cy="100" r="82" fill="#E0E8F2" opacity="0.6"/>
+
+  <!-- Heart -->
+  <path d="M 100 168
+           C 100 168 30 128 30 78
+           C 30 56 50 42 70 50
+           C 84 56 96 68 100 76
+           C 104 68 116 56 130 50
+           C 150 42 170 56 170 78
+           C 170 128 100 168 100 168 Z"
+        fill="url(#heartBlue)"/>
+
+  <!-- Heart inner highlight -->
+  <ellipse cx="65" cy="72" rx="11" ry="20" fill="#FFFFFF" opacity="0.32" transform="rotate(-25 65 72)"/>
+  <circle cx="56" cy="62" r="3.5" fill="#FFFFFF" opacity="0.55"/>
+
+  <!-- Sparkles -->
+  <g fill="#5B7BA0">
+    <path d="M 30 36 L 32 42 L 38 42 L 33 46 L 35 52 L 30 49 L 25 52 L 27 46 L 22 42 L 28 42 Z" opacity="0.75"/>
+    <path d="M 170 36 L 172 42 L 178 42 L 173 46 L 175 52 L 170 49 L 165 52 L 167 46 L 162 42 L 168 42 Z" opacity="0.75"/>
+    <circle cx="18" cy="100" r="2.5" opacity="0.55"/>
+    <circle cx="182" cy="100" r="2.5" opacity="0.55"/>
+  </g>
+</svg>

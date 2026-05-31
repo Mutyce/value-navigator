@@ -94,7 +94,8 @@ function insertFooter() {
         </div>
 
         <div class="site-footer__support">
-          Проект реализуется при поддержке Министерства общественных коммуникаций Белгородской области
+          <img src="images/ministry-belgorod.svg" alt="Герб Белгородской области" class="site-footer__ministry-logo">
+          <span>Проект реализуется при поддержке Министерства общественных коммуникаций Белгородской области</span>
         </div>
 
         <div class="site-footer__bottom">
@@ -163,3 +164,15 @@ function initActiveNav() {
     }
   });
 }
+
+// reCAPTCHA validation — used by forms via onsubmit="return validateRecaptcha(this)"
+function validateRecaptcha(form) {
+  if (typeof grecaptcha === 'undefined') return true; // captcha didn't load → fail-open
+  const response = grecaptcha.getResponse();
+  if (!response) {
+    alert('Подтвердите, что вы не робот');
+    return false;
+  }
+  return true;
+}
+window.validateRecaptcha = validateRecaptcha;

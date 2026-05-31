@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="Координатор">
+  <title>Координатор</title>
+
+  <!-- Halo -->
+  <circle cx="100" cy="105" r="82" fill="#F5EDE0" opacity="0.55"/>
+
+  <!-- Soft shadow -->
+  <ellipse cx="100" cy="186" rx="60" ry="5" fill="#3D2B1F" opacity="0.12"/>
+
+  <!-- Calendar body -->
+  <rect x="32" y="40" width="136" height="142" rx="10" fill="#FFFFFF" stroke="#E8784A" stroke-width="3"/>
+
+  <!-- Top header strip -->
+  <path d="M 32 50 Q 32 40 42 40 L 158 40 Q 168 40 168 50 L 168 68 L 32 68 Z" fill="#E8784A"/>
+
+  <!-- Header rings (binder) -->
+  <rect x="56" y="28" width="6" height="22" rx="2" fill="#5C7843"/>
+  <rect x="138" y="28" width="6" height="22" rx="2" fill="#5C7843"/>
+
+  <!-- Day-of-week dots -->
+  <g fill="#FFFFFF">
+    <circle cx="50" cy="58" r="3"/>
+    <circle cx="68" cy="58" r="3"/>
+    <circle cx="86" cy="58" r="3"/>
+    <circle cx="104" cy="58" r="3"/>
+    <circle cx="122" cy="58" r="3"/>
+    <circle cx="140" cy="58" r="3"/>
+  </g>
+
+  <!-- Date grid (4 rows × 6 cols) -->
+  <g fill="#F5EDE0" stroke="#E8784A" stroke-width="1" opacity="0.8">
+    <rect x="42" y="78" width="18" height="18" rx="2"/>
+    <rect x="64" y="78" width="18" height="18" rx="2"/>
+    <rect x="86" y="78" width="18" height="18" rx="2"/>
+    <rect x="108" y="78" width="18" height="18" rx="2"/>
+    <rect x="130" y="78" width="18" height="18" rx="2"/>
+    <rect x="42" y="100" width="18" height="18" rx="2"/>
+    <rect x="64" y="100" width="18" height="18" rx="2"/>
+    <rect x="108" y="100" width="18" height="18" rx="2"/>
+    <rect x="130" y="100" width="18" height="18" rx="2"/>
+    <rect x="42" y="122" width="18" height="18" rx="2"/>
+    <rect x="64" y="122" width="18" height="18" rx="2"/>
+    <rect x="86" y="122" width="18" height="18" rx="2"/>
+    <rect x="108" y="122" width="18" height="18" rx="2"/>
+    <rect x="130" y="122" width="18" height="18" rx="2"/>
+    <rect x="42" y="144" width="18" height="18" rx="2"/>
+    <rect x="64" y="144" width="18" height="18" rx="2"/>
+    <rect x="86" y="144" width="18" height="18" rx="2"/>
+  </g>
+
+  <!-- Highlighted date (today) -->
+  <circle cx="95" cy="109" r="13" fill="#F5A623"/>
+  <text x="95" y="114" font-family="Arial, sans-serif" font-size="13" font-weight="700"
+        fill="#FFFFFF" text-anchor="middle">15</text>
+
+  <!-- Star markers on key dates -->
+  <path d="M 117 153 L 119 158 L 124 158 L 120 161 L 122 166 L 117 163 L 112 166 L 114 161 L 110 158 L 115 158 Z" fill="#7BA05B"/>
+  <path d="M 51 87 L 53 91 L 57 91 L 54 94 L 55 98 L 51 96 L 47 98 L 48 94 L 45 91 L 49 91 Z" fill="#7BA05B"/>
+</svg>

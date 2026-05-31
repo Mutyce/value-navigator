@@ -8,7 +8,11 @@
       "Bash(git -C /Users/kostan/value-navigator commit -m ' *)",
       "Bash(git -C /Users/kostan/value-navigator push)",
       "Bash(ls -la /mnt/user-data/uploads/ 2>/dev/null || echo \"uploads path not accessible\")",
-      "Bash(git -C /Users/kostan/value-navigator add contest.html materials.html files/ .claude/settings.local.json)"
+      "Bash(git -C /Users/kostan/value-navigator add contest.html materials.html files/ .claude/settings.local.json)",
+      "Bash(textutil -convert txt -encoding UTF-8 \"/Users/kostan/Downloads/ЦИД_Техническое_задание_разработка_сайт.doc\" -output /tmp/tz.txt)",
+      "Read(//tmp/**)",
+      "Bash(textutil -convert txt -encoding UTF-8 \"/Users/kostan/Downloads/инфо к вопросам.doc\" -output /tmp/info.txt)",
+      "Bash(python3 -c \"import pypdf; r = pypdf.PdfReader\\('/Users/kostan/value-navigator/files/polozhenie-konkursa.pdf'\\); print\\(r.metadata\\); [print\\(p.extract_text\\(\\)[:500]\\) for p in r.pages[:3]]\")"
     ]
   }
 }
