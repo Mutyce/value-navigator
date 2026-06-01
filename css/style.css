@@ -1091,6 +1091,17 @@ ul {
 .result-email__form {
   display: flex;
   gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 560px) {
+  .result-email__form {
+    flex-direction: column;
+  }
+  .result-email__input,
+  .result-email__form .btn-primary {
+    width: 100%;
+  }
 }
 
 .result-email__input {
