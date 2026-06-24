@@ -22,6 +22,11 @@
       </div>
     </section>
 
+    <!-- Видео-галерея рендерится из Google-таблицы (js/videos.js).
+         Разметка ниже — fallback: показывается, пока таблица не подключена
+         (SHEET_ID в videos.js) или если Google недоступен. -->
+    <div id="video-sections">
+
     <!-- ─── Секция 1: Семейный вечер ─────────────────────── -->
     <section class="vpage-section section" id="video">
       <div class="container">
@@ -151,7 +156,14 @@
           </article>
 
         </div>
+      </div>
+    </section>
 
+    </div><!-- /#video-sections -->
+
+    <!-- ─── Приглашение ──────────────────────────────────── -->
+    <section class="vpage-section section">
+      <div class="container">
         <div class="vpage-invite">
           <p class="vpage-invite__text">Присылайте свои видео — они могут попасть в эту галерею</p>
           <a href="contest.html" class="btn-primary">Участвовать в конкурсе</a>
@@ -196,5 +208,6 @@
   <div id="footer"></div>
 
   <script src="js/main.js?v=12"></script>
+  <script src="js/videos.js?v=1"></script>
 </body>
 </html>
