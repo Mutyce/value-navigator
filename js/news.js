@@ -8,7 +8,7 @@
   // ─── TODO: вставить ID Google-таблицы новостей ───────────────────────
   // Заказчик пришлёт ссылку на таблицу. ID — кусок её URL между /d/ и /edit.
   // Пока стоит PASTE_SHEET_ID — рендер выключен, показывается fallback.
-  const SHEET_ID = 'PASTE_SHEET_ID';
+  const SHEET_ID = '1Dms1rCjWxngHeY7AVnlp3D2mJdwuTjg4tz0S3LFIEZ0';
 
   document.addEventListener('DOMContentLoaded', () => {
     if (SHEET_ID === 'PASTE_SHEET_ID') return;       // таблица ещё не подключена
